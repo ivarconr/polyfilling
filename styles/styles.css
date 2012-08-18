@@ -1,8 +1,18 @@
 h1 {
   padding-left: 1em;
   padding: 0.1em 1em;
-  background: #444;
   color: white;
+  background: #444;
+
+  /* borrowed from http://modernizr.com/ */
+  background: -moz-linear-gradient(top, #1f1f1f 0%, #424242 2.5%, #1f1f1f 5%, #313131 95%, #141414 97.5%, #313131 100%);
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#1f1f1f), color-stop(2.5%,#424242), color-stop(5%,#1f1f1f), color-stop(95%,#313131), color-stop(97.5%,#141414), to(#313131));
+  background: -webkit-linear-gradient(top, #1f1f1f 0%, #424242 2.5%, #1f1f1f 5%, #313131 95%, #141414 97.5%, #313131 100%);
+  background: -o-linear-gradient(top, #1f1f1f 0%, #424242 2.5%, #1f1f1f 5%, #313131 95%, #141414 97.5%, #313131 100%);
+  background: -ms-linear-gradient(top, #1f1f1f 0%, #424242 2.5%, #1f1f1f 5%, #313131 95%, #141414 97.5%, #313131 100%);
+  background: linear-gradient(top, #1f1f1f 0%, #424242 2.5%, #1f1f1f 5%, #313131 95%, #141414 97.5%, #313131 100%);
+  /* Wishful thinking: */
+  background: gradient(top, #1f1f1f:0, #424242:2.5, #1f1f1f:5, #313131:95, #141414:97.5, #313131));
 }
 
 .bottom {
@@ -99,7 +109,16 @@ li li {
   border-radius: 0 10px 0px 0px;
   border-top: 1px solid black;
   border-right: 1px solid black;
-  
+
+  /* borrowed from http://modernizr.com/ */
+  background: -moz-linear-gradient(top, #1f1f1f 0%, #424242 2.5%, #1f1f1f 5%, #313131 95%, #141414 97.5%, #313131 100%);
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#1f1f1f), color-stop(2.5%,#424242), color-stop(5%,#1f1f1f), color-stop(95%,#313131), color-stop(97.5%,#141414), to(#313131));
+  background: -webkit-linear-gradient(top, #1f1f1f 0%, #424242 2.5%, #1f1f1f 5%, #313131 95%, #141414 97.5%, #313131 100%);
+  background: -o-linear-gradient(top, #1f1f1f 0%, #424242 2.5%, #1f1f1f 5%, #313131 95%, #141414 97.5%, #313131 100%);
+  background: -ms-linear-gradient(top, #1f1f1f 0%, #424242 2.5%, #1f1f1f 5%, #313131 95%, #141414 97.5%, #313131 100%);
+  background: linear-gradient(top, #1f1f1f 0%, #424242 2.5%, #1f1f1f 5%, #313131 95%, #141414 97.5%, #313131 100%);
+  /* Wishful thinking: */
+  background: gradient(top, #1f1f1f:0, #424242:2.5, #1f1f1f:5, #313131:95, #141414:97.5, #313131));
 
 }
 .slide .itera-logo:after {
