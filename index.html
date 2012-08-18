@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hva om jeg vil bruke HTML5 funksjoner i dag?</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <script src="js/remark-0.3.5.min.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/styles.css">
+    <script type="text/javascript">
+
+    </script>
+  </head>
+  <body>
+    <textarea id="source">
+
+.center
+#  Hva om jeg vil bruke HTML5 funksjoner i dag?
+<br />
+<br />
+
+_Presentert av_
+
+## Ivar Conradi Østhus 
+
+_på_
+
+## JavaZone 2012
+
+.itera-logo[ ]
+<div class="bottom">
+ **epost:** .social[ivarconr@gmail.com]  <br />
+ **twitter:** .social[twitter.com/ivarconr] 
+</div>
+
+---
+# HTML5 rocks!
+
+- HTML5 strukturelementer (`<nav>`, `<header>`, `<footer>`)
+- Web Storage
+- Web Sockets
+- Web Workers
+- HTML5 History API
+- HTML5 Video
+- Canvas
+- Offline
+- WebGL
+- ...
+
+---
+# HTML5
+
+.big
+- ... er kult!
+- ... gir mange nye muligheter
+- ... forenkler min utvikler-hverdag
+
+<div class="box important">
+__Jeg vil bruke HTML5 funksjoner .underline[i dag]!__
+</div>
+
+---
+.big
+# Problemet
+- Ukjente elementer (`<article>`, `<section>`, `<footer>`, ..) styles ikke 
+- Nye funksjoner er ikke tilgjengelig i gamle nettlesere
+- Varierende støtte av HTML5 funksjoner blant de store nettleserene
+- Rykende ferske funksjoner er ikke tilgjengelig i alle moderne nettlesere samtidig..
+
+---
+.imgbg
+# http://html5readiness.com
+<img src="images/html5readiness.png">
+
+---
+.imgbg
+# http://caniuse.com
+<img src="images/caniuse.png">
+
+---
+.imgbg
+# Det største problemet: .red[oldIE]
+<img src="images/ie.jpg" width="100%">
+
+---
+# OBS! Ikke .red[bare] et .blue[IE] problem!
+### Noen eksempler:
+
+- Microdata API
+- History API
+- Fullscreen API
+- Audio API
+- Page Visibility API 
+- IndexDB
+- meter taggen
+- ...osv
+
+<div class="box important">
+__Rykende ferske funksjoner er ikke tilgjengelig i alle moderne nettlesere samtidig...__
+</div>
+
+---
+.center.middle.imgbg
+# Jeg vil ikke begrenses til funksjoner som støttes av ALLE nettlesere!
+
+---
+# Løsningen!
+.center[<img src="images/polyfill-logo.jpg" style="width: 40%;" />]
+
+---
+.middle.big
+<div class="site">
+  A polyfill, or polyfiller, is a piece of code (or plugin) that provides the 
+  technology that you, the developer, expect the browser to provide natively. 
+  Flattening the API landscape if you will. 
+</div>
+.author[Remy Sharp]
+
+
+---
+# Polyfilling lar oss bruke moderne funksjoner i dag!
+
+- Implementerer støtte i (gamle) nettlesere
+ - Typisk via JavaScript, HTML og CSS
+ - Bruker også fallbacks (Java, Flash og Silverlight) ved behov
+- Lar oss kode for fremtiden
+ - Koden vår følger standarden
+ - Vi slipper å lære nye API'er
+- Gir alle brukerene _samme_ opplevelse
+
+---
+.big
+# Vanlige polyfills
+
+- html5shim
+- respond.js
+- CSS3Pie
+- flashcanvas
+- history.js
+- socket.io
+- +++
+
+<br />
+
+<div class="important box">
+**Beste oversikten over tilgjengelige polyfills:**
+[https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills)
+</div>
+
+---
+# Hvordan vet vi hva nettleseren støtter?
+- **Generell HTML5 support?**
+ - HTML5 er en samling av mange individuelle funksjoner
+ - Få (ingen) nettlesere støtter _alt_
+- **Nettleser-sniffing?**
+ - Nettlesere finnes i mange typer og versjoner
+ - Støtter ulike funskjoner i ulike versjoner
+ - Oppdateres hyppig
+ - Fungerer dårlig!
+
+---
+.big
+# .blue[Løsning:] <br /> Feature detection!
+- Teknikk som verifiser støtte for individuelle funksjoner
+- Vil gi riktig svar selv om oppdatering innfører støtte for funksjon
+- Uavhengig av __nettleser__ og __versjon__!
+
+<br /><br />
+
+<div class="box important">
+  __Feature detection gjør at vi vet når det er behov for en polyfill!__
+</div>
+
+
+
+---
+.imgbg
+<img src="images/modernizr.png">
+
+<div class="infobox">
+  <ul>
+    <li>Tester 40+ moderne funksjoner (CSS & HTML5)</li>
+    <li>Holder informasjon om hva som støttes i et JS-objekt</li>
+    <li>Legger til klasser på html-elementet som indikerer hvilke features som støttes</li>
+  </ul>
+</div>
+
+---
+# Modernizr eksempeler
+
+#### Klasser på html-elementet?
+
+<img src="images/modernizer_classes.png" class="fullwidth border"  />
+
+
+#### Hva med JavaScript?
+    
+    .javascript
+    if(Modernizr.localstorage) {
+      //Nettleseren støtter localstorage!!
+    } else {
+      //Nettleser støtter ikke localstorage
+    }
+
+
+
+---
+.imgbg
+# Hva kan jeg bruke? Og Hvordan?
+<img src="images/html5please.png">
+
+---
+.center.imgbg
+# Skal vi __polyfille__ ALT?
+
+<img src="images/kanon3.jpg" style="width:100%;" />
+
+---
+# Ytelse
+- Må ikke glemme at polyfill kommer med en ekstra kostand!
+ - Hvor rask er våre polyfiller?
+ - Er det verdt kostnadden?
+ - Kan vi klare oss uten?
+- Ofte helt greit å gi forskjellig opplevelse til forskjellige nettlesere
+
+---
+# Last polyfill kun ved behov!
+
+### yepnope.js
+- Lar oss laste polyfill asynkront basert på enkle tester
+- Gjør det mulig å _bare_ laste de scriptene brukeren faktisk trenger
+- Kan kombineres med Modernizr
+
+---
+.imgbg
+<img src="images/yepnope.png" />
+
+---
+# Oppsummering
+- __Polyfilling lar oss bruke moderne funksjoner i produksjon i dag!__
+ - Vi koder for fremtiden!
+- __Bruk Feature detection__
+ - For å finne ut om det er behov for polyfill
+- __Tenk på ytelsen!__
+ - Men, også ofte helt greit å gi forskjellig opplevelse til forskjellige nettlesere
+- __Bruk betinget lasting__
+ - Ikke last polyfill dersom funksjonen støttes. 
+
+.itera-logo[ ]
+<div class="bottom">
+ .social[twitter.com/ivarconr] <br /> 
+ (presentasjonen er laget med .social[github.com/gnab/remark])
+</div>
+    </textarea>
+    <div id="slideshow"></div>
+  </body>
+</html>

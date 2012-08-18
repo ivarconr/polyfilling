@@ -1,0 +1,127 @@
+h1 {
+  padding-left: 1em;
+  padding: 0.1em 1em;
+  background: #444;
+  color: white;
+}
+
+.bottom {
+  bottom: 10px;
+  left: 180px;
+  position: absolute;
+  text-align: left;
+}
+
+li {
+  margin: 10px 0;
+}
+
+li li {
+  margin: 5px 0;
+}
+
+.social {
+  color: navy;
+}
+
+.site {
+  font-style: italic;
+}
+.site:before {
+  content: '“'
+}
+.site:after {
+  content: '”'
+}
+
+.author{
+  font-style: normal;
+  font-weight: bold;
+  float: right;
+}
+.author:before{
+  content: '—';
+}
+
+.underline {
+  text-decoration: underline;
+}
+.border {
+  border: 1px solid #444;
+}
+
+.important {
+  background: #BAD696;
+}
+.box {
+  border: 1px solid #444;
+  border-radius: 5px;
+  padding: 10px;
+}
+.fullwidth {
+  width: 100%;
+}
+
+.big p, .big ul, .big div {
+  font-size: 1.4em;
+}
+
+
+/** Colors **/
+.red {
+  color: red;
+}
+.blue {
+  color: #D1D7FF;
+}
+
+/** Template stuff **/
+.infobox {
+  position: absolute; 
+  left: 10px; 
+  top: 400px;
+  background: #444;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px 6px yellow;
+  padding: 0 20px 0 0;
+  color: white;
+}
+
+.slide .itera-logo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px;
+  z-index: 10;
+  background-color: #444;
+  border-radius: 0 10px 0px 0px;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  
+
+}
+.slide .itera-logo:after {
+  content: url("../images/IteraConsulting.png");  
+}
+
+/**imgbg - Overrides to allow full image background**/
+#slideshow .slide .content.imgbg {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.imgbg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+.imgbg h1 {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
