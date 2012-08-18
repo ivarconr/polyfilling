@@ -27,8 +27,8 @@ _på_
 
 .itera-logo[ ]
 <div class="bottom">
- **epost:** .social[ivarconr@gmail.com]  <br />
- **twitter:** .social[twitter.com/ivarconr] 
+  **epost: ** <a href="mailto:ivarconr@gmail.com" class="social" target="_blank">ivarconr@gmail.com</a><br />
+  **twitter: ** <a href="http://twitter.com/ivarconr" class="social" target="_blank">twitter.com/ivarconr</a>
 </div>
 
 ---
@@ -53,7 +53,7 @@ _på_
 - ... gir mange nye muligheter
 - ... forenkler min utvikler-hverdag
 
-<div class="box important">
+<div class="box important center">
 __Jeg vil bruke HTML5 funksjoner .underline[i dag]!__
 </div>
 
@@ -181,7 +181,7 @@ __Nye funksjoner er ikke tilgjengelig i alle moderne nettlesere samtidig.__
 
 <div class="infobox">
   <ul>
-    <li>Tester 40+ moderne funksjoner (CSS & HTML5)</li>
+    <li>Tester 40+ moderne web funksjoner (CSS & HTML5)</li>
     <li>Holder informasjon om hva som støttes i et JS-objekt</li>
     <li>Legger til klasser på html-elementet som indikerer hvilke features som støttes</li>
   </ul>
@@ -218,20 +218,28 @@ __Nye funksjoner er ikke tilgjengelig i alle moderne nettlesere samtidig.__
 <img src="images/kanon3.jpg" style="width:100%;" />
 
 ---
+.big
 # Ytelse
 - Må ikke glemme at polyfill kommer med en ekstra kostand!
- - Hvor rask er våre polyfiller?
- - Er det verdt kostnadden?
- - Kan vi klare oss uten?
-- Ofte helt greit å gi forskjellig opplevelse til forskjellige nettlesere
+- Hvor raske er våre polyfiller?
+- Er det verdt kostnadden?
+- .underline[Kan vi klare oss uten?]
+
+<div class="box important">
+** Ofte helt greit å gi forskjellig opplevelse til forskjellige nettlesere! **
+</div>
 
 ---
+.big
 # Last polyfill kun ved behov!
+- Vi må ikke straffe brukere med moderne nettlesere!
+- Last kun polyfills asynkront hvis du må!
+- Bruk feature detection til å sjekke
+<br /><br/>
 
-### yepnope.js
-- Lar oss laste polyfill asynkront basert på enkle tester
-- Gjør det mulig å _bare_ laste de scriptene brukeren faktisk trenger
-- Kan kombineres med Modernizr
+<div class="box important">
+  **yepnope kan laste JavaScript asynkront ved behov og kan kombineres med Modernizr!**
+</div>
 
 ---
 .imgbg
@@ -239,19 +247,26 @@ __Nye funksjoner er ikke tilgjengelig i alle moderne nettlesere samtidig.__
 
 ---
 # Oppsummering
-- __Polyfilling lar oss bruke moderne funksjoner i produksjon i dag!__
- - Vi koder for fremtiden!
-- __Bruk Feature detection__
- - For å finne ut om det er behov for polyfill
-- __Tenk på ytelsen!__
- - Men, også ofte helt greit å gi forskjellig opplevelse til forskjellige nettlesere
+- __Polyfilling lar oss bruke moderne funksjoner i produksjon i dag__
+ - Vi koder for fremtiden
+- __Bruk feature detection__
+ - For å finne ut hvilke funksjoner som støttes
+- __Tenk på ytelsen__
+ - Ofte greit å gi forskjellig opplevelse til forskjellige nettlesere
 - __Bruk betinget lasting__
- - Ikke last polyfill dersom funksjonen støttes. 
+ - Ikke last polyfill unødvendig!
+
+<br />
+<div class="center" style="padding: 5px 0;border-radius: 10px;background-color: #ddd">
+  ### Takk for meg! 
+  ** Ivar Conradi Østhus** <br />
+  <a href="mailto:ivarconr@gmail.com" class="social" target="_blank">ivarconr@gmail.com</a> <br />
+</div>
 
 .itera-logo[ ]
 <div class="bottom">
- .social[twitter.com/ivarconr] <br /> 
- (presentasjonen er laget med .social[github.com/gnab/remark])
+  **twitter: ** <a href="http://twitter.com/ivarconr" class="social" target="_blank">twitter.com/ivarconr</a>  <br />
+  **presentasjon laget med:** <a href="http://github.com/gnab/remark" class="social" target="_blank">github.com/gnab/remark</a>
 </div>
     </textarea>
     <div id="slideshow"></div>
