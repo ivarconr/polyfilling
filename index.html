@@ -5,9 +5,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <script src="js/remark-0.3.5.min.js" type="text/javascript"></script>
     <link rel="stylesheet" type="text/css" media="screen" href="styles/styles.css">
-    <script type="text/javascript">
-
-    </script>
   </head>
   <body>
     <textarea id="source">
@@ -27,34 +24,41 @@ _på_
 
 .itera-logo[ ]
 <div class="bottom">
-  **epost: ** <a href="mailto:ivarconr@gmail.com" class="social" target="_blank">ivarconr@gmail.com</a><br />
-  **twitter: ** <a href="http://twitter.com/ivarconr" class="social" target="_blank">twitter.com/ivarconr</a>
+  **epost: ** <a href="mailto:ivarconr@gmail.com" class="social" target="_blank">ivarconr@gmail.com</a> </br>
+  **twitter: **<a href="http://twitter.com/ivarconr" class="social" target="_blank">@ivarconr</a>
 </div>
 
 ---
 # HTML5 rocks!
 
 - HTML5 strukturelementer (`<nav>`, `<header>`, `<footer>`)
-- Web Storage
-- Web Sockets
-- Web Workers
-- HTML5 History API
-- HTML5 Video
+- Web Storage (*)
+- Web Sockets (*)
+- Web Workers 
+- History API
+- Video
+- Audio
 - Canvas
 - Offline
 - WebGL
+- Nye form-elementer
+- Figur-element
 - ...
 
+.bottom[_(*) Teknisk sett ikke en del av HTML5_]
+
 ---
+.big
 # HTML5
 
-.big
-- ... er kult!
+- ... har mange nye kule funksjoner
 - ... gir mange nye muligheter
-- ... forenkler min utvikler-hverdag
+- ... forenkler min utviklerhverdag
+
+<br />
 
 <div class="box important center">
-__Jeg vil bruke HTML5 funksjoner .underline[i dag]!__
+  __Jeg vil bruke HTML5 funksjoner .underline[i dag]!__
 </div>
 
 ---
@@ -62,8 +66,8 @@ __Jeg vil bruke HTML5 funksjoner .underline[i dag]!__
 # Problemet
 - Ukjente elementer (`<article>`, `<section>`, `<footer>`, ..) styles ikke 
 - Nye funksjoner er ikke tilgjengelig i gamle nettlesere
-- Varierende støtte av HTML5 funksjoner blant de store nettleserene
-- Rykende ferske funksjoner er ikke tilgjengelig i alle moderne nettlesere samtidig..
+- Varierende støtte av HTML5 funksjoner blant vanlige nettleserene
+- Rykende ferske funksjoner er ikke tilgjengelig i alle moderne nettlesere samtidig...
 
 ---
 .imgbg
@@ -84,6 +88,7 @@ __Jeg vil bruke HTML5 funksjoner .underline[i dag]!__
 # Ikke .red[bare] et .blue[IE] problem!
 ### Noen eksempler:
 
+- Color Input
 - Microdata API
 - History API
 - Fullscreen API
@@ -95,10 +100,8 @@ __Jeg vil bruke HTML5 funksjoner .underline[i dag]!__
 
 <br />
 
-<div class="box important">
-  
-__Nye funksjoner er ikke tilgjengelig i alle moderne nettlesere samtidig.__
-
+<div class="box important"> 
+__Nye funksjoner blir ikke tilgjengelig i alle nettlesere samtidig.__
 </div>
 
 ---
@@ -204,14 +207,13 @@ __Nye funksjoner er ikke tilgjengelig i alle moderne nettlesere samtidig.__
       //Nettleser støtter ikke localstorage
     }
 
-
-
 ---
+<!--
 .imgbg
 # Hva kan jeg bruke? Og Hvordan?
 <img src="images/html5please.png">
+-->
 
----
 .center.imgbg
 # Skal vi __polyfille__ ALT?
 
@@ -246,27 +248,25 @@ __Nye funksjoner er ikke tilgjengelig i alle moderne nettlesere samtidig.__
 <img src="images/yepnope.png" />
 
 ---
-# Oppsummering
+# Takk for meg!
 - __Polyfilling lar oss bruke moderne funksjoner i produksjon i dag__
- - Vi koder for fremtiden
 - __Bruk feature detection__
- - For å finne ut hvilke funksjoner som støttes
 - __Tenk på ytelsen__
- - Ofte greit å gi forskjellig opplevelse til forskjellige nettlesere
-- __Bruk betinget lasting__
- - Ikke last polyfill unødvendig!
+- __Ikke last polyfills unødvendig!__
 
 <br />
-<div class="center" style="padding: 5px 0;border-radius: 10px;background-color: #ddd">
-  ### Takk for meg! 
+<div class="center" style="padding: 10px 0;border-radius: 10px;background-color: #ddd">
   ** Ivar Conradi Østhus** <br />
-  <a href="mailto:ivarconr@gmail.com" class="social" target="_blank">ivarconr@gmail.com</a> <br />
+  <a href="mailto:ivarconr@gmail.com" class="social" target="_blank">ivarconr@gmail.com</a> ||
+  <a href="http://twitter.com/ivarconr" class="social" target="_blank">@ivarconr</a>  <br />
+  <br />
+  Presentasjon: <br />
+  **<a href="http://iivarconr.github.com/polyfilling" class="social" target="_blank">ivarconr.github.com/polyfilling</a>** <br />
 </div>
 
 .itera-logo[ ]
 <div class="bottom">
-  **twitter: ** <a href="http://twitter.com/ivarconr" class="social" target="_blank">twitter.com/ivarconr</a>  <br />
-  **presentasjon laget med:** <a href="http://github.com/gnab/remark" class="social" target="_blank">github.com/gnab/remark</a>
+  (presentasjon laget med: <a href="http://github.com/gnab/remark" class="social" target="_blank">github.com/gnab/remark)</a>
 </div>
     </textarea>
     <div id="slideshow"></div>
