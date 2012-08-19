@@ -66,7 +66,7 @@ _på_
 # Problemet
 - Ukjente elementer (`<article>`, `<section>`, `<footer>`, ..) styles ikke 
 - Nye funksjoner er ikke tilgjengelig i gamle nettlesere
-- Varierende støtte av HTML5 funksjoner blant vanlige nettleserene
+- Varierende støtte av HTML5 funksjoner blant nettleserene
 - Rykende ferske funksjoner er ikke tilgjengelig i alle moderne nettlesere samtidig...
 
 ---
@@ -148,7 +148,7 @@ __Nye funksjoner blir ikke tilgjengelig i alle nettlesere samtidig.__
 <br />
 
 <div class="important box">
-**Beste oversikten over tilgjengelige polyfills:**
+**God oversikt over tilgjengelige polyfills:**
 [https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills)
 </div>
 
@@ -163,11 +163,13 @@ __Nye funksjoner blir ikke tilgjengelig i alle nettlesere samtidig.__
  - Oppdateres hyppig
  - Fungerer dårlig!
 
+vi trenger noe bedre...
+
 ---
 .big
 # .blue[Løsning:] <br /> Feature detection!
-- Teknikk som verifiser støtte for individuelle funksjoner
-- Vil gi riktig svar selv om oppdatering innfører støtte for funksjon
+- Teknikk som verifiser støtte av individuelle funksjoner
+- Vil gi riktig svar selv om nettleseroppdatering innfører støtte for funksjon
 - Uavhengig av __nettleser__ og __versjon__!
 
 <br /><br />
@@ -236,7 +238,7 @@ __Nye funksjoner blir ikke tilgjengelig i alle nettlesere samtidig.__
 # Last polyfill kun ved behov!
 - Vi må ikke straffe brukere med moderne nettlesere!
 - Last kun polyfills asynkront hvis du må!
-- Bruk feature detection til å sjekke
+- Bruk feature detection til å teste hvilke polyfills som trengs
 <br /><br/>
 
 <div class="box important">
