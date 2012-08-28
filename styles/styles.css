@@ -1,8 +1,22 @@
+.content:after {
+  content: "Ivar Conradi Østhus @ JavaZone 2012";
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: gray;
+  font-size: 0.7em;
+}
+
+body {
+  font-family: serif;
+}
+
 h1 {
   padding-left: 1em;
   padding: 0.1em 1em;
   color: white;
   background: #444;
+  border-radius: 5px;
 
   /* borrowed from http://modernizr.com/ */
   background: -moz-linear-gradient(top, #1f1f1f 0%, #424242 2.5%, #1f1f1f 5%, #313131 95%, #141414 97.5%, #313131 100%);
@@ -100,30 +114,15 @@ li li {
   color: white;
 }
 
-.slide .itera-logo {
+.slide .itera-logo:after {
+  content: url("../images/IteraConsulting.png");  
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 10px;
   z-index: 10;
-  background-color: #444;
-  border-radius: 0 10px 0px 0px;
-  border-top: 1px solid black;
-  border-right: 1px solid black;
-
-  /* borrowed from http://modernizr.com/ */
-  background: -moz-linear-gradient(top, #1f1f1f 0%, #424242 2.5%, #1f1f1f 5%, #313131 95%, #141414 97.5%, #313131 100%);
-  background: -webkit-gradient(linear, 0 0, 0 100%, from(#1f1f1f), color-stop(2.5%,#424242), color-stop(5%,#1f1f1f), color-stop(95%,#313131), color-stop(97.5%,#141414), to(#313131));
-  background: -webkit-linear-gradient(top, #1f1f1f 0%, #424242 2.5%, #1f1f1f 5%, #313131 95%, #141414 97.5%, #313131 100%);
-  background: -o-linear-gradient(top, #1f1f1f 0%, #424242 2.5%, #1f1f1f 5%, #313131 95%, #141414 97.5%, #313131 100%);
-  background: -ms-linear-gradient(top, #1f1f1f 0%, #424242 2.5%, #1f1f1f 5%, #313131 95%, #141414 97.5%, #313131 100%);
-  background: linear-gradient(top, #1f1f1f 0%, #424242 2.5%, #1f1f1f 5%, #313131 95%, #141414 97.5%, #313131 100%);
-  /* Wishful thinking: */
-  background: gradient(top, #1f1f1f:0, #424242:2.5, #1f1f1f:5, #313131:95, #141414:97.5, #313131));
-
-}
-.slide .itera-logo:after {
-  content: url("../images/IteraConsulting.png");  
+  background-color: #000;
+  border-radius: 0 5px 0px 0px;
 }
 
 /**imgbg - Overrides to allow full image background**/
@@ -144,4 +143,5 @@ li li {
 .imgbg h1 {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  border-radius: 0;
 }

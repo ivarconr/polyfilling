@@ -9,8 +9,8 @@
   <body>
     <textarea id="source">
 
-.center
-#  Hva om jeg vil bruke HTML5 funksjoner i dag?
+.center.imgbg
+#  Hva om jeg vil bruke <br /> HTML5 funksjoner i dag?
 <br />
 <br />
 
@@ -153,7 +153,7 @@ __Nye funksjoner blir ikke tilgjengelig i alle nettlesere samtidig.__
 </div>
 
 ---
-# Hvordan vet vi hva nettleseren støtter?
+# Hva støtter nettleseren?
 - **Generell HTML5 support?**
  - HTML5 er en samling av mange individuelle funksjoner
  - Få (ingen) nettlesere støtter _alt_
@@ -217,7 +217,7 @@ vi trenger noe bedre...
 -->
 
 .center.imgbg
-# Skal vi __polyfille__ ALT?
+# Skal vi __polyfille__ .red[ALT]?
 
 <img src="images/kanon3.jpg" style="width:100%;" />
 
@@ -235,14 +235,16 @@ vi trenger noe bedre...
 
 ---
 .big
-# Last polyfill kun ved behov!
+# Bare hvis du må!
+- Last polyfill kun ved behov!
 - Vi må ikke straffe brukere med moderne nettlesere!
 - Last kun polyfills asynkront hvis du må!
 - Bruk feature detection til å teste hvilke polyfills som trengs
 <br /><br/>
 
 <div class="box important">
-  **yepnope kan laste JavaScript asynkront ved behov og kan kombineres med Modernizr!**
+  **- yepnope laster JavaScript asynkront ved behov.** <br />
+  **- Kan kombineres med Modernizr!**
 </div>
 
 ---
