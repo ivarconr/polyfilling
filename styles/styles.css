@@ -76,13 +76,13 @@ li li {
 }
 
 .important {
-  background: #BAD696;
+  background: #F0F0F0;
   background-repeat: repeat-x;
-  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#BAD696), to(#DFF5C4));
-  background: -webkit-linear-gradient(top, #BAD696, #DFF5C4);
-  background: -moz-linear-gradient(top, #BAD696, #DFF5C4);
-  background: -ms-linear-gradient(top, #BAD696, #DFF5C4);
-  background: -o-linear-gradient(top, #BAD696, #DFF5C4);
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#F0F0F0), to(#CCC));
+  background: -webkit-linear-gradient(top, #F0F0F0, #CCC);
+  background: -moz-linear-gradient(top, #F0F0F0, #CCC);
+  background: -ms-linear-gradient(top, #F0F0F0, #CCC);
+  background: -o-linear-gradient(top, #F0F0F0, #CCC);
 }
 .box {
   border: 1px solid #444;
@@ -135,7 +135,7 @@ pre {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 10px;
+  padding: 15px 10px 10px 10px;
   z-index: 10;
   background-color: #000;
   border-radius: 0 5px 0px 0px;
