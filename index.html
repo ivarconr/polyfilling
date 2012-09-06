@@ -110,28 +110,29 @@ __Nye funksjoner blir ikke tilgjengelig i alle nettlesere samtidig.__
 
 ---
 # Løsningen!
-.center[<img src="images/polyfill-logo.jpg" style="width: 40%;" />]
+<br />
 
----
-.middle.big
-<div class="site">
+<img src="images/polyfill-logo.jpg" style="width: 28%;float:left;margin-right: 30px;" />
+<br />
+<span class="site big">
   A polyfill, or polyfiller, is a piece of code (or plugin) that provides the 
   technology that you, the developer, expect the browser to provide natively. 
   Flattening the API landscape if you will. 
-</div>
+</span> <br />
 .author[Remy Sharp]
-
 
 ---
 # Polyfilling lar oss bruke moderne funksjoner i dag!
 
-- Implementerer støtte i (gamle) nettlesere
+- **Implementerer støtte i (gamle) nettlesere**
  - Typisk via JavaScript, HTML og CSS
- - Bruker også fallbacks (Java, Flash og Silverlight) ved behov
-- Lar oss kode for fremtiden
- - Koden vår følger standarden
+ - Også via fallbacks: Java, Flash og Silverlight
+- **Lar oss kode for fremtiden**
+ - Vi følger standarden
+ - Trenger ikke vente til nettleseren følger standarden
  - Vi slipper å lære nye API'er
-- Gir alle brukerene _samme_ opplevelse
+- **Gir alle brukerene _samme_ opplevelse**
+ - Slipper flere versjoner av samme nettside
 
 ---
 .big
@@ -240,32 +241,36 @@ vi trenger noe bedre...
 - Vi må ikke straffe brukere med moderne nettlesere!
 - Last kun polyfills asynkront hvis du må!
 - Bruk feature detection til å teste hvilke polyfills som trengs
-<br /><br/>
-
-<div class="box important">
-  **- yepnope laster JavaScript asynkront ved behov.** <br />
-  **- Kan kombineres med Modernizr!**
-</div>
 
 ---
 .imgbg
 <img src="images/yepnope.png" />
 
+<!--
+yepnope laster JavaScript asynkront ved behov.
+Kan kombineres med Modernizr!
+-->
+
 ---
 # Takk for meg!
-- __Polyfilling lar oss bruke moderne funksjoner i produksjon i dag__
-- __Bruk feature detection__
-- __Tenk på ytelsen__
-- __Ikke last polyfills unødvendig!__
+<div class="big">
+
+- Polyfilling lar oss bruke moderne funksjoner i produksjon i dag
+- Bruk feature detection
+- Tenk på ytelsen
+- Ikke last polyfills unødvendig!
+
+</div>
 
 <br />
-<div class="center" style="padding: 10px 0;border-radius: 10px;background-color: #ddd">
+
+<div class="center box important">
   ** Ivar Conradi Østhus** <br />
   <a href="mailto:ivarconr@gmail.com" class="social" target="_blank">ivarconr@gmail.com</a> ||
   <a href="http://twitter.com/ivarconr" class="social" target="_blank">@ivarconr</a>  <br />
   <br />
-  Presentasjon: <br />
-  **<a href="http://iivarconr.github.com/polyfilling" class="social" target="_blank">ivarconr.github.com/polyfilling</a>** <br />
+  **Presentasjon:**<br />
+  <a href="http://ivarconr.github.com/polyfilling" class="social" target="_blank">ivarconr.github.com/polyfilling</a>
 </div>
 
 .itera-logo[ ]
