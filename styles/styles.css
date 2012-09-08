@@ -11,6 +11,15 @@ body {
   font-family: serif;
 }
 
+a, a:visited {
+  text-decoration: none;
+  color: navy;
+}
+
+a:hover {
+  color: red;
+}
+
 h1 {
   padding-left: 1em;
   padding: 0.1em 1em;
@@ -105,8 +114,20 @@ pre {
   border-radius: 3px;
 }
 
+.details {
+  width: 300px;
+  text-align: right;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+}
 
+.presenter {
 
+}
+.presenter h2 {
+  font-size: 2em;
+}
 
 /** Colors **/
 .red {
@@ -114,6 +135,12 @@ pre {
 }
 .blue {
   color: #D1D7FF;
+}
+.gray {
+  color: #666;
+}
+.small {
+  font-size: 0.8em;
 }
 
 /** Template stuff **/
@@ -135,9 +162,20 @@ pre {
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 15px 10px 10px 10px;
+  padding: 15px 18px 10px 10px;
   z-index: 10;
   background-color: #000;
+  border-radius: 0 5px 0px 0px;
+}
+
+.slide .smidig-logo:after {
+  content: url("../images/smidig2012.png");  
+  position: absolute;
+  bottom: 60px;
+  left: 0;
+  padding: 15px 0px 10px 0px;
+  z-index: 10;
+  background-color: white;
   border-radius: 0 5px 0px 0px;
 }
 
