@@ -11,16 +11,17 @@
 
 .center.imgbg
 #  Hva om jeg vil bruke <br /> HTML5 funksjoner i dag?
+<img src="images/background.jpg" width="100px;" />
+
+
+<br />
 <br />
 <br />
 
-_Presentert av_
-
+<div class="presenter">
 ## Ivar Conradi Østhus 
-
-_på_
-
-## JavaZone 2012
+### JavaZone 2012
+</div>
 
 .itera-logo[ ]
 <div class="bottom">
@@ -100,13 +101,15 @@ _på_
 
 <br />
 
-<div class="box important">
-__Nye funksjoner blir ikke tilgjengelig i alle nettlesere samtidig.__
+<div class="center box important">
+__Nye funksjoner blir ikke tilgjengelig i alle nettlesere samtidig__
 </div>
 
 ---
 .center.middle.imgbg
 # <br />Jeg vil ikke begrenses til funksjoner som støttes av ALLE nettlesere!<br /><br />
+
+<img src="images/background.jpg" />
 
 ---
 # Løsningen!
@@ -148,13 +151,18 @@ __Nye funksjoner blir ikke tilgjengelig i alle nettlesere samtidig.__
 
 <br />
 
-<div class="important box">
+<div class="important box" style="font-size: 22px;">
 **God oversikt over tilgjengelige polyfills:**
-[https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills)
+[github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills](https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills)
 </div>
 
 ---
-# Hva støtter nettleseren?
+.imgbg.middle.center
+# <br />Hva støtter nettleseren? <br /><br />
+
+<img src="images/background.jpg" />
+
+<!--
 - **Generell HTML5 support?**
  - HTML5 er en samling av mange individuelle funksjoner
  - Få (ingen) nettlesere støtter _alt_
@@ -165,18 +173,19 @@ __Nye funksjoner blir ikke tilgjengelig i alle nettlesere samtidig.__
  - Fungerer dårlig!
 
 vi trenger noe bedre...
+-->
 
 ---
 .big
-# .blue[Løsning:] <br /> Feature detection!
-- Teknikk som verifiser støtte av individuelle funksjoner
-- Vil gi riktig svar selv om nettleseroppdatering innfører støtte for funksjon
+# Feature detection
+- Verifisere støtte for konkrete funksjoner
+- Gir riktig svar selv når nettleseren innfører støtte for aktuell funksjon
 - Uavhengig av __nettleser__ og __versjon__!
 
 <br /><br />
 
 <div class="box important">
-  __Feature detection gjør at vi vet når det er behov for en polyfill!__
+  __Gjennom feature detection vet vi når det er behov for en polyfill!__
 </div>
 
 
@@ -237,10 +246,10 @@ vi trenger noe bedre...
 ---
 .big
 # Bare hvis du må!
-- Last polyfill kun ved behov!
-- Vi må ikke straffe brukere med moderne nettlesere!
-- Last kun polyfills asynkront hvis du må!
-- Bruk feature detection til å teste hvilke polyfills som trengs
+- Ikke last polyfills unødvendig
+- Unødvendig lasting straffer moderne nettlesere
+- Feature detection avgjør om en polyfill er nødvendig
+- Last polyfills asynkront, hvis du må
 
 ---
 .imgbg
@@ -255,27 +264,29 @@ Kan kombineres med Modernizr!
 # Takk for meg!
 <div class="big">
 
+- Polyfilling tetter nettleserhullene
 - Polyfilling lar oss bruke moderne WEB-funksjoner i dag
 - Bruk feature detection
 - Tenk på ytelsen
-- Ikke last polyfills unødvendig!
+- Ikke last polyfills unødvendig
 
 </div>
 
-<br />
 
-<div class="center box important">
+<div class="details box important">
   ** Ivar Conradi Østhus** <br />
-  <a href="mailto:ivarconr@gmail.com" class="social" target="_blank">ivarconr@gmail.com</a> ||
+  <a href="mailto:ivarconr@gmail.com" class="social" target="_blank">ivarconr@gmail.com</a> <br />
   <a href="http://twitter.com/ivarconr" class="social" target="_blank">@ivarconr</a>  <br />
   <br />
-  **Presentasjon:**<br />
+  **Presentasjon** <br />
   <a href="http://ivarconr.github.com/polyfilling" class="social" target="_blank">ivarconr.github.com/polyfilling</a>
 </div>
 
-.itera-logo[ ]
-<div class="bottom">
-  (presentasjon laget med: <a href="http://github.com/gnab/remark" class="social" target="_blank">github.com/gnab/remark)</a>
+<a href="http://smidig2012.no">.smidig-logo[ ]</a>
+<a href="http://itera.no">.itera-logo[ ]</a>
+
+<div class="bottom small">
+  .gray[Presentasjon laget med: <br /> <a href="http://github.com/gnab/remark" class="social" target="_blank">github.com/gnab/remark</a>]
 </div>
     </textarea>
     <div id="slideshow"></div>
